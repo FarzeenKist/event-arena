@@ -1,5 +1,4 @@
-The app is hosted here: https://tangerine-mermaid-a028d5.netlify.app
 
-# Description.
+# Event-Arena
 
-Near Book-store daap is platform where writers can upload a listing of their books for sale and other users can buy a copy of their book for a price in near and they can also like their book. It has some additional unique admin functionalies .
+Event Arena is a platform that hosts can create event and other users can register to attend these events by paying the registration fee set by the event creator.
