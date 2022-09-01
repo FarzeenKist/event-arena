@@ -6,7 +6,7 @@ const GAS = 100000000000000;
 export function createEvent(event) {
   event.id = uuid4();
   event.price = parseNearAmount(event.price + "");
-  return window.contract.setEvent({ book });
+  return window.contract.setEvent({ event });
 }
 
 

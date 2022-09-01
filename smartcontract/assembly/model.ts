@@ -6,7 +6,8 @@ import { PersistentUnorderedMap, context, u128 } from "near-sdk-as";
 export class Event {
     id: string;
     title: string;
-    dateandtime: string;
+    ends: u64;
+    deadlineRegister: u64;
     image: string;
     description: string;
     location: string;
@@ -18,7 +19,8 @@ export class Event {
         const event = new Event();
         event.id = payload.id;
         event.title = payload.title;
-        event.dateandtime = payload.dateandtime;
+        event.ends = payload.ends;
+        event.deadlineRegister = payload.deadlineRegister;
         event.image = payload.image;
         event.description = payload.description;
         event.location = payload.location;

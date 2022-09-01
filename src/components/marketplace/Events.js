@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { toast } from "react-toastify";
-import AddBook from "./AddBook";
-import Book from "./Book";
+import AddEvent from "./AddEvent";
+import Event from "./Event";
 import Loader from "../utils/Loader";
 import { Row } from "react-bootstrap";
 
@@ -71,7 +71,7 @@ const Events = () => {
     setLoading(true);
 
     try {
-      await changeLocation(_Id, _location).then((resp) => {
+      await changeLocation(Id, _location).then((resp) => {
         toast(<NotificationSuccess text="location changed successfully." />);
         getEvents();
       });
